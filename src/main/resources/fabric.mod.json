@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "narutoasimod",
+	"version": "${version}",
+	"name": "Naruto Mod by Asikaso",
+	"description": "This Is A Naruto Mod Made For 1.20.1 Fabric!",
+	"authors": [
+		"Asikaso / AsiTheTrans!"
+	],
+	"contact": {
+		"homepage": "No Homepage Yet! :(",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/narutoasimod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"net.asikaso.narutomod.NarutoModByAsikasoClient"
+		],
+		"main": [
+			"net.asikaso.narutomod.NarutoModByAsikaso"
+		],
+		"fabric-datagen": [
+			"net.asikaso.narutomod.NarutoModByAsikasoDataGenerator"
+		]
+	},
+	"mixins": [
+		"naruto-asi-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
